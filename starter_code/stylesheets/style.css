@@ -5,3 +5,18 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #5b5e6d;
+}
+
+body>nav>img {
+    width: 200px;
+}
+
+body>nav>i {
+    display: none;
+}
