@@ -26,7 +26,7 @@ nav {
     width: 100%;
     color: #5a5d6c;
     background: #fff;
-    border-bottom: solid #5b5e6d;
+    border-bottom: solid #F4F3F4;
 }
 
 nav img {
@@ -68,7 +68,8 @@ header {
 
 header h1 {
     font-size: 5em;
-    margin-left: 50px;
+    margin-left: 65px;
+    margin-right: 65px;
     font-family: serif;
     color: #2C303F;
     line-height: 0.9em;
@@ -77,7 +78,19 @@ header h1 {
 header p {
     font-size: 2.2em;
     margin-top: 1.5em;
-    margin-left: 1.2em;
+    margin-left: 65px;
+    margin-right: 65px;
     line-height: 1.5em;
     color: #5b5e6d;
+}
+
+header input {
+ margin-left: 65px;
+ margin-right: 65px;
+ margin-top: 80px;
+ border: solid #F4F3F4;
+ border-radius: 10px;
+ width: 650px;
+ height: 110px;
+ font-size: 2.5em; 
 }
