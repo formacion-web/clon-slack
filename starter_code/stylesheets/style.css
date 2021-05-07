@@ -5,41 +5,67 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-        
-        body {
-            font-family: "Proxima Nova Soft", Proxima Nova Soft, sans-serif;
-            color: #FFF;
-        }
-        
-        @media(min-width:480px),
-        (max-width:768px) {
-            body {
-                display: block;
-            }
-            nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                border: 3px;
-                border-bottom: #5b5e6d;
-            }
-            nav img {
-                width: 240px;
-                height: auto;
-            }
-            nav ul li {
-                display: inline-block;
-                /* box-sizing: inherit;*/
-                width: 50px;
-                height: 50px;
-            }
-            i {
-                width: 35px;
-                height: 5px;
-                background-color: #333;
-                margin: 6px 0;
-                transition: 0.4s;
-            }
+
+          
+body {
+font-family: "Proxima Nova Soft", Proxima Nova Soft, sans-serif;
+background-color: #FFF;
+font-size: 900;
+}
+
+@media(min-width:480px),
+(max-width:768px) {
+body {
+    display: block;
+   
+}
+/* For mobile phones: */
+/*[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: 
+    .col-s-1 {width: 0%;}
+    .col-s-2 {width: 25%;}
+    .col-s-3 {width: 50%;}
+    .col-s-4 {width: 75%;}
+    .col-s-5 {width: 100%;}
+    
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: 
+    .col-1 {width: 0%;}
+    .col-2 {width: 25%;}
+    .col-3 {width: 50%;}
+    .col-4 {width: 75%;}
+    .col-5 {width: 100%;}
+    
+  }*/
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px;
+    border-bottom: #5b5e6d;
+}
+nav img {
+    width: 100px;
+    height: auto;
+}
+nav ul{
+    display: none;
+}
+nav ul li {
+    display: inline-block;
+    /* box-sizing: inherit;*/
+    width: 50px;
+    height: 50px;
+}
+.fa-bars {
+   
+}
             /*.fa,
 .fas {
     font-family: sans-serif;
@@ -53,3 +79,4 @@ nav grey: #5b5e6d;
 .fa-pull-right {
     float: right;
 }*/
+}
