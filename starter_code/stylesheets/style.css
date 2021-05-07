@@ -1,7 +1,55 @@
-/*
-background-grey: #F4F3F4;
+            /*
+ackground-grey: #F4F3F4;
 button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+        
+        body {
+            font-family: "Proxima Nova Soft", Proxima Nova Soft, sans-serif;
+            color: #FFF;
+        }
+        
+        @media(min-width:480px),
+        (max-width:768px) {
+            body {
+                display: block;
+            }
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 3px;
+                border-bottom: #5b5e6d;
+            }
+            nav img {
+                width: 240px;
+                height: auto;
+            }
+            nav ul li {
+                display: inline-block;
+                /* box-sizing: inherit;*/
+                width: 50px;
+                height: 50px;
+            }
+            i {
+                width: 35px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+            /*.fa,
+.fas {
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.fa-xs {
+    font-size: .75em;
+}
+
+.fa-pull-right {
+    float: right;
+}*/
