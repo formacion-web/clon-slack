@@ -21,23 +21,21 @@ p{
 
 /* MARGENES */
 
-body>nav,
+
 body>header{
     max-width: 768px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 40px;
 }
 
 body>nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #5b5e6d;
+    border-bottom: 1px solid #ebebee;
 }
 
-body>nav>*,
-body>header
- {
+body>nav>* {
     margin: 0 20px;
 }
 
@@ -61,7 +59,7 @@ body>header>h1{
     margin-bottom: 40px;
 }
 
-body>header>p{
+body>header>p.subtitle{
     max-width: 600px;
     width: 100%;
     margin-bottom: 40px;
@@ -79,9 +77,27 @@ body>header>input{
 }
 
 body>header>button{
+    margin: 10px 0;
+    padding: 8px 12px;
     border: none;
     background-color: #192592;
     color: #fff;
     font-weight: bold;
 }
 
+body>header>p.text{
+    text-align: center;
+}
+
+body>header>img{
+    width: 600px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+main{
+    background-color: #F4F3F4;
+    border-top: 2px solid #ebebee;
+    border-bottom: 2px solid #ebebee;
+    
+}
