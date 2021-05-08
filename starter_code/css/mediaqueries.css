@@ -1,0 +1,512 @@
+
+/****************** RESPONSIVE GRID ******************************
+******************************************************************/
+
+
+.row {
+    overflow: auto;
+    clear: both;
+}
+
+*[class*="col-"] {
+    float: left;
+    padding: 2px;
+}
+
+/****fullhd*****/
+
+/***** PC *****/
+@media only screen and (min-width: 1025px)  {
+
+ /**********MAIN************/
+   #content-list>.float-right{
+        clear: none;
+    }
+    input{
+        display: none;
+    }
+    .foot-article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+/*************+footer**************/
+    
+     .flags-none{
+        display:none;
+    }
+
+.col-l-1 {display: block; width: 8.33%;}
+.col-l-2 {display: block; width: 16.66%;}
+.col-l-3 {display: block; width: 25%;}
+.col-l-4 {display: block; width: 33.33%;}
+.col-l-5 {display: block; width: 41.66%;}
+.col-l-6 {display: block; width: 50%;}
+.col-l-7 {display: block; width: 58.33%;}
+.col-l-8 {display: block; width: 66.66%;}
+.col-l-9 {display: block; width: 75%;}
+.col-l-10 {display: block; width: 83.33%;}
+.col-l-11 {display: block; width: 91.66%;}
+.col-l-12 {display: block; width: 100%;}
+
+}
+
+
+
+/****** TABLET *******/
+@media only screen and (min-width: 962px) and (max-width: 1024px) {
+    
+/**********header**************/
+    #menu{
+        display: none;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+/************ MAIN *********/
+
+    #principal {
+        padding-top: 10px;
+    }
+     #intro{
+        display: flex;
+        flex-direction: column-reverse;
+        margin:0px 80px 0px 80px;
+        padding-top: 130px;
+     }
+    article{
+        float: none;
+        margin: 0 auto;
+    }
+    .foot-article h3{
+        font-size: .9em;
+        float: none;   
+    }
+
+    .btn-starter{
+        float: right;
+        display: block;
+    }
+    .img-slack{
+        padding-top: 20px;
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .foot-article .content-float-left {
+        margin-top: 20px;
+    }
+    .content-float-left {
+        margin-top: 0px;
+    }
+/************ FOOTER *********/
+
+    
+    .flags-float-right{
+        width: 410px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    .flags-none{
+        display:flex;
+        overflow: hidden;
+    }
+    
+    .flags-none a{
+        color:black;
+        padding-left: 3px;
+        display: block;
+    }
+    .flags-none h3:last-child{
+        text-align: center;
+        padding-left: 15px;
+    }
+    
+   
+    .flags-pc{
+        display: none;
+    }
+    .menu-flag {
+        margin-top: 10px;    
+    }
+    
+    .social-media{
+        display: block;
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    .col-m-0 {display: none; }
+    .col-m-1 {display: block; width: 8.33%;}
+    .col-m-2 {display: block; width: 16.66%;}
+    .col-m-3 {display: block; width: 25%;}
+    .col-m-4 {display: block; width: 33.33%;}
+    .col-m-5 {display: block; width: 41.66%;}
+    .col-m-6 {display: block; width: 50%;}
+    .col-m-7 {display: block; width: 58.33%;}
+    .col-m-8 {display: block; width: 66.66%;}
+    .col-m-9 {display: block; width: 75%;}
+    .col-m-10 {display: block; width: 83.33%;}
+    .col-m-11 {display: block; width: 91.66%;}
+    .col-m-12 {display: block; width: 100%;}
+}
+
+
+
+/********* Smartphone ********/
+@media only screen and (min-width: 769px) and (max-width: 961px) {
+
+  
+/***header***/
+    #cabecera {
+     box-shadow: none;
+     position: static;
+    }
+      #menu{
+        display: none;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+    
+/***********main***************/
+   
+    #principal {
+        padding-top: 10px;
+    }
+
+     #intro{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px 25px 0px 25px;
+     }
+    article{
+        float: none;
+        margin: 0 auto;
+    }
+    .foot-article h3{
+        font-size: .9em;
+    }
+    .img-slack{
+        padding-top: 20px;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .btn-starter{
+        float: right;
+        margin: 0 auto;
+        margin: 0px 0px 0px 20px;
+        min-width: 170px;
+    }
+    
+    #aside-sign .box-float{
+        margin: 0px 20px;
+        padding: 8px 0 0px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #aside-sign .content-float-left{
+        margin-top: 0;
+    }
+    .list-enterprise>li img {
+       margin: 0 auto;
+       float: none; 
+    }
+    .foot-article .content-float-left {
+        margin-top: 20px;
+    }
+  
+/************footer************/
+     .wrapper-box{
+         padding-left: 0px;
+         padding-right: 0px;
+    }
+    .float-right{
+        clear: none;
+    }
+    
+    .float-right .listas-footer li{
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 1em!important;
+        padding-bottom: 15px;
+        margin-right: 10px;
+    }
+    
+    .listas-footer li:first-child{
+        font-size: .8em!important;
+    }
+    
+    .copy-list{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .copy-list>li {
+        padding:0 20px 0 20px;
+        font-size: .9em;
+    }
+    
+    
+    .flags-float-right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .padding-logo-list{
+        padding-left: 20px;
+    }
+    
+    .flags-none{
+        display:flex;
+        overflow: hidden;
+    }
+    
+    .flags-none h3{
+        text-align: center;
+    }
+    
+    .flags-none a{
+        color:black;
+        padding-left: 3px;
+        display: block;
+    }
+    
+    .flags-none h3:last-child{
+        text-align: center;
+        padding-left: 15px;
+    }
+    
+
+    .menu-flag{
+        margin-top: 10px;
+    }
+
+    .menu-flag>li{
+        width: 130px;
+    }
+    
+    .flags-pc{
+        display: none;
+    }
+ 
+      .social-media{
+        display: block;
+        float: right;
+        margin-bottom: 7px;
+    }
+/****************footer*******************/
+    .float-right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .listas-footer li{
+        max-width: 91px;
+        margin: 0 auto;
+    }
+
+    .col-s-0 {display: none;}
+    .col-s-1 {display: block; width: 8.33%;}
+    .col-s-2 {display: block; width: 16.66%;}
+    .col-s-3 {display: block; width: 25%;}
+    .col-s-4 {display: block; width: 33.33%;}
+    .col-s-5 {display: block; width: 41.66%;}
+    .col-s-6 {display: block; width: 50%!important;}
+    .col-s-7 {display: block; width: 58.33%;}
+    .col-s-8 {display: block; width: 66.66%;}
+    .col-s-9 {display: block; width: 75%;}
+    .col-s-10 {display: block; width: 83.33%;}
+    .col-s-11 {display: block; width: 91.66%;}
+    .col-s-12 {display: block; width: 100%;}
+}
+
+
+
+/******litle smartphone*****/
+@media only screen and (max-width: 768px) {
+
+  
+/********header********/
+
+    #menu{
+        display: none;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    #cabecera {
+     box-shadow: none;
+     position: static;
+    }
+
+/****************************** MAIN *************************/
+    
+    #principal {
+    padding-top: 10px;
+    }
+     #intro{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px 25px 0px 25px;
+     }
+    .foot-article h3{
+        font-size: 1em;
+    }
+    .btn-starter{
+        margin-top: 20px;
+    }
+    .content-float-left p{
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-slack{
+        padding: 20px;
+    }
+     .content-float-left{
+         text-align: center;
+         margin-bottom: 20px;
+     }
+   
+    
+    .list-enterprise li{
+        padding: 10px 30px 0px 30px;   
+    }
+    
+    .content-center {
+        margin-bottom: 55px;
+    }
+    .list-enterprise>li img {
+       margin: 0 auto;
+       float: none; 
+    }
+
+/*********footer***********/
+    .wrapper-box{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+        padding: 0 10px;
+    }
+    
+    #menu-footer{
+        display: flex;
+    flex-direction: column;
+    }
+    .box-float-left {
+        width: 32%;
+        padding-bottom: 30px;
+    }
+    .box-float-left img{
+        margin: 0 auto;
+    }
+    
+    .float-right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .listas-footer li{
+        max-width: 105px;
+        margin: 0 auto;
+        font-size: 1.1em!important;
+        padding-bottom: 15px;
+    }
+    .listas-footer li:first-child{
+        font-size: 1em!important;
+    }
+    .paddingleft{
+        padding-left: 20px;
+    }
+
+    .margin-list{
+        margin-bottom: 30px;
+    }
+    
+    
+    .copy-list{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .copy-list>li {
+        padding:0 8px 0 8px;
+        font-size: .9em;
+    }
+    
+    
+    .flags-float-right{
+        width: 100%;
+         display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    
+    .flags-none{
+        display:flex;
+        overflow: hidden;
+    }
+    
+    .flags-none h3{
+        text-align: center;
+    }
+    
+    .flags-none a{
+        color:black;
+        padding-left: 3px;
+        display: block;
+    }
+    .flags-none h3:last-child{
+        text-align: center;
+        padding-left: 15px;
+    }
+        
+    .menu-flag>li{
+        width: 130px;
+    }
+    .flags-pc{
+        display: none;
+    }
+ 
+    .social-media{
+        display: block;
+        float: right;
+    }
+    .social-media li{
+        padding: 2px 0px 0px 0px;
+    }
+
+
+    .col-xs-0 {display: none;}
+    .col-xs-1 {display: block; width: 8.33%;}
+    .col-xs-2 {display: block; width: 16.66%;}
+    .col-xs-3 {display: block; width: 25%;}
+    .col-xs-4 {display: block; width: 33.33%;}
+    .col-xs-5 {display: block; width: 41.66%;}
+    .col-xs-6 {display: block; width: 50%;}
+    .col-xs-7 {display: block; width: 58.33%;}
+    .col-xs-8 {display: block; width: 66.66%;}
+    .col-xs-9 {display: block; width: 75%;}
+    .col-xs-10 {display: block; width: 83.33%;}
+    .col-xs-11 {display: block; width: 91.66%;}
+    .col-xs-12 {display: block; width: 100%!important;}
+}
+
