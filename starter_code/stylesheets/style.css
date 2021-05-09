@@ -18,6 +18,8 @@ nav grey: #5b5e6d;
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  width: 768px;
+ margin: auto;
 }
 nav {
   position: fixed;
@@ -78,7 +80,7 @@ header p {
   color: #5b5e6d;
 }
 
-header input {
+ input {
   margin-left: 70px;
   margin-right: 70px;
   margin-top: 80px;
@@ -156,9 +158,9 @@ main p {
 }
 
 main img {
-  width: 50vw;  
+  width: 384px;  
   margin: auto;
-  /* height: auto; */
+  height: auto;
 }
 
 main button {
@@ -177,16 +179,24 @@ main button {
 .partners {
   display: flex;
   height: 200px;
-  /* align-items: center;
+  align-items: center;
   width: 630px;
-  margin: auto; */
+  margin: auto; 
 }
 
-/*.partners img {
+.partners:last-of-type {
+  height: 280px;
+}
+
+.partners img {
   display: block;
    margin-left: auto;
   margin-right: auto; 
-}*/
+}
+
+.partners img:last-of-type {
+  margin-top: 75px;
+}
 
 
 hr {
@@ -202,4 +212,17 @@ main p:nth-last-of-type(2) {
     font-size: 2.8em;
     font-weight: 700;
     margin-top: 20px;
+}
+
+main button:last-of-type {
+  margin-bottom: 90px;
+}
+
+form hr {
+  width: auto;
+}
+
+footer img:first-of-type {
+  margin-left: 15px;
+  float: left;
 }
