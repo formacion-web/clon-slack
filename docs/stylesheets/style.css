@@ -360,6 +360,7 @@ nav grey: #5b5e6d;
         body>header {
             display: flex;
             flex-direction: row-reverse;
+            justify-content: center;
         }
         body>header>img {
             margin-right: 20px;
