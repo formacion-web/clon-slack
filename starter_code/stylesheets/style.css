@@ -70,7 +70,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
     /*box-shadow: 0 4px 40px rgb(0 0 0 / 5%);*/
     padding: 2rem;
     top: 0;
@@ -92,13 +92,12 @@ nav ul {
 nav ul li {
     display: inline-block;
     /* box-sizing: inherit;*/
-    width: 50px;
-    height: 50px;
+    width: 70px;
 }
 
 .fa-bars {
     color: #5b5e6d;
-    z-index: auto;
+    justify-items: flex-end;
 }
 
 header {
@@ -112,8 +111,26 @@ header img {
     margin-top: 20%;
 }
 
+main {
+    position: sticky;
+}
+
 main div {
     background-color: #F4F3F4;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+main section {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
 }
 
 main div img {
@@ -169,7 +186,6 @@ li {
     list-style: none;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: #5b5e6d;
 }
@@ -190,11 +206,13 @@ li {
 
 div.flag {
     height: 100px;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 
 .flag img {
-    width: 40px;
+    width: 35px;
+    align-items: center;
 }
 
 .footer2 ul {
@@ -204,4 +222,8 @@ div.flag {
 
 .footer2 ul li {
     display: inline-block;
+}
+
+span {
+    width: 100%;
 }
