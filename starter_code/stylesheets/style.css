@@ -75,7 +75,7 @@ nav {
     padding: 2rem;
     top: 0;
     left: 0;
-    border-bottom: 2px solid #cecece;
+    border-bottom: 1px solid #cecece;
     position: fixed;
     z-index: 100;
     background-color: #fff;
@@ -131,7 +131,8 @@ button {
     border-style: none;
     border-radius: 8px;
     padding: 12px;
-    width: auto;
+    box-sizing: content-box;
+    width: 100%;
 }
 
 .discovery {
@@ -140,6 +141,8 @@ button {
     border-radius: 8px;
     padding: 12px;
     border: 2px solid #192592;
+    box-sizing: content-box;
+    width: 100%;
 }
 
 footer {
