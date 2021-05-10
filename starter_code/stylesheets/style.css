@@ -229,20 +229,24 @@ form hr {
 footer img:first-of-type {
   
   margin-left: 15px;
-  float: left;
+  margin-right: 548px;
+  
+  width: 220px;
+  height: 220px;
 }
 
 footer div:first-of-type {
-  display: flex;
+  
+  text-align: left;
   
 }
 
-footer ul {
-  float: left;
+ul {
   font-size: 1.8em;
   margin-top: 1.5em;
   margin-left: 70px;
   margin-right: 70px;
   line-height: 1.7em;
   color: #5b5e6d;
+  
 }
