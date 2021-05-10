@@ -226,6 +226,10 @@ form hr {
   width: auto;
 }
 
+footer {
+  display: inline;
+}
+
 footer img:first-of-type {
   
   margin-left: 15px;
@@ -248,5 +252,6 @@ ul {
   margin-right: 70px;
   line-height: 1.7em;
   color: #5b5e6d;
+  max-width: 300px;
   
 }
