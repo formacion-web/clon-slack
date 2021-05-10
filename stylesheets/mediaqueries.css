@@ -30,6 +30,7 @@
         flex-direction: column;
         justify-content: center;
     }
+
 /*************+footer**************/
     
      .flags-none{
@@ -100,6 +101,7 @@
     .content-float-left {
         margin-top: 0px;
     }
+ 
 /************ FOOTER *********/
 
     
@@ -392,7 +394,9 @@
        margin: 0 auto;
        float: none; 
     }
-
+    .box-float-left {
+        top: 0px;
+    }
 /*********footer***********/
     .wrapper-box{
         display: flex;

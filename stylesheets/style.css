@@ -275,7 +275,9 @@ input{
     color:#12188a;
     background: white;
 }
-
+.box-sign-first {
+    margin-top: 20px;
+}
 /***
 section 2
 ***/
@@ -390,6 +392,9 @@ section 3
     margin-left: 5px;
     border-bottom: 1px solid #12188a;
 }
+.box-sign-second {
+    margin-top: 0px;
+}
 /*********************
 *******footer*********
 *********************/
@@ -419,8 +424,14 @@ Section 1  footer
     clear: none!important;
     padding: 55px 0px 65px 35px;
 }
+
+.box-float-left{
+    position: relative;
+    top: -29px;
+}
+
 .box-float-left img{
-    width: 50px;
+    width: 100px;
 }
 .listas-footer li:first-child{
     font-weight: 600;
