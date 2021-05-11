@@ -228,10 +228,12 @@ footer {
   display: inline-block;
   color: #5b5e6d;
   width: 768px;
+  
 }
 
 .footer_top {
   text-align: left;
+  display: table;
 }
 
 .slack_logo {
@@ -245,13 +247,16 @@ footer {
 .footer_top ul {
   width: 250px;
   font-size: 1.8em;
+  font-weight: 500;
   margin-top: 1.5em;
   margin-left: 70px;
   margin-right: 70px;
-  line-height: 1.7em;
-  
-  display: inline-block;
+  line-height: 2.7em;  
   float: left;
+}
+
+.footer_top ul li:first-of-type {
+  font-weight: 700;
 }
 
 .footer_bottom {
@@ -278,17 +283,15 @@ footer {
 .footer_bottom img {
     width: 40px;
     height: auto;
+    transform: translateY(21%);
+    margin-right: 15px;
 }
 
-.footer_bottom span {
- 
-  margin-bottom: 30px;
-}
+
 
 .footer_bottom i {
- bottom: 20px;
-  
+ 
  font-size: 1.2em;
- margin: 35px 20px 20px 20px;
+ margin: 30px 20px 20px 20px;
 }
 
