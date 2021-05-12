@@ -18,22 +18,40 @@ nav grey: #5b5e6d;
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  width: 768px;
-  margin: auto;
   
+  margin: auto; 
+  position: relative; 
 }
-nav {
+
+@media (min-width: 768px) and (max-width: 960px){
+  body {
+    width: 960px;
+
+  }
+}
+
+
+nav {  
   position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
-  flex-flow: wrap;
-  width: 768px;
+  flex-wrap: nowrap;
+  width: 100%;
   color: #5b5e6d;
   background: #fff;
   border-bottom: solid #f3f2f3;
   margin: auto;
 }
+
+/* @media (min-width: 768px) and (max-width: 960px){
+  nav {
+    width: 960px;
+    
+  }
+} */
+
+
 
 nav img {
   width: 200px;
@@ -129,7 +147,7 @@ main {
   border-top: solid #f3f2f4;
 
   text-align: center;
-  width: 768px;
+  /* width: 768px; */
   margin: auto;
 }
 
@@ -228,7 +246,7 @@ form hr {
 footer {
   display: inline-block;
   color: #5b5e6d;
-  width: 768px;
+  /* width: 768px; */
   
 }
 
@@ -264,7 +282,7 @@ footer {
   display: inline-block;
   font-size: 1.8em;
   font-weight: 700;
-  width: 768px;
+  /* width: 768px; */
   height: 300px;
   background: #f4f3f4;
   line-height: 80px;  
