@@ -20,6 +20,7 @@ body {
   text-align: center;
   width: 768px;
   margin: auto;
+  
 }
 nav {
   position: fixed;
@@ -245,11 +246,11 @@ footer {
 }
 
 .footer_top ul {
-  width: 250px;
+  width: 260px;
   font-size: 1.8em;
   font-weight: 500;
   margin-top: 1.5em;
-  margin-left: 70px;
+  margin-left: 60px;
   margin-right: 70px;
   line-height: 2.7em;  
   float: left;
@@ -267,11 +268,13 @@ footer {
   height: 300px;
   background: #f4f3f4;
   line-height: 80px;  
+  margin-top: 60px;
 }
 
 .footer_bottom div {
   height: 190px;
   position: relative;
+  
 }
 
 .footer_bottom ul li {
