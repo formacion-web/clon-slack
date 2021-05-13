@@ -252,7 +252,7 @@ footer {
 
 .footer_top {
   text-align: left;
-  display: table;
+  display: flex;
 }
 
 .slack_logo {
