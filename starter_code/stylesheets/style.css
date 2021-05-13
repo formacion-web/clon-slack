@@ -26,13 +26,12 @@ body {
     margin-right: 10%;*/
     flex-wrap: wrap;
 }
+
 header {
-  
-    height: 100vh;    
+    height: 100vh;
     display: grid;
     grid-template-rows: 1fr 4fr 1fr 1fr 1fr 1fr;
 }
-
 
 nav {
     display: flex;
@@ -43,13 +42,11 @@ nav {
     width: 100vw;
     border-bottom: 1px solid #cecece;
     z-index: 1000;
-   
 }
-nav div h1{
-        
-   
+
+nav div h1 {
     position: fixed;
-    
+    margin-top: 20%;
     background-color: #fff;
 }
 
@@ -71,8 +68,6 @@ nav ul li {
     color: #5b5e6d;
     justify-items: flex-end;
 }
-
-
 
 header img {
     display: flex;
@@ -110,25 +105,22 @@ main div img {
     margin-left: 30%;
     background-color: #F4F3F4;
 }
-button{
+
+button {
     background-color: #192592;
     color: #f2f2f2;
     border-style: none;
     border-radius: 8px;
     padding: 10px;
     height: 75%;
-    
 }
+
 input {
     background-color: #fff;
     border: 1px solid #333;
     border-radius: 8px;
-   
     height: 40%;
-    border-radius: 8px;
     padding: 10px;
-    border: 20px;
-    
 }
 
 .discovery {
