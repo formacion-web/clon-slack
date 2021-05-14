@@ -18,17 +18,16 @@ nav grey: #5b5e6d;
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  
+ 
   margin: auto; 
-  position: relative; 
+  
 }
 
-@media (min-width: 768px) and (max-width: 960px){
+/* @media (min-width: 768px) and (max-width: 960px){
   body {
-    width: 960px;
-
+    
   }
-}
+} */
 
 
 nav {  
@@ -76,9 +75,10 @@ nav i {
 
 header {
   margin-top: 200px;
-  width: 768px;
+  /* width: 768px; */
   margin-left: auto;
   margin-right: auto;
+  text-align: left;
 }
 
 header h1 {
@@ -97,6 +97,7 @@ header p {
   margin-right: 70px;
   line-height: 1.7em;
   color: #5b5e6d;
+  
 }
 
 input {
@@ -246,19 +247,22 @@ form hr {
 footer {
   display: inline-block;
   color: #5b5e6d;
+  width: 100vw;
   /* width: 768px; */
   
 }
 
 .footer_top {
   text-align: left;
-  display: flex;
+  display: table;
+  
+  
 }
 
 .slack_logo {
   margin-left: 15px;
   margin-right: 548px;
-
+left: 0%;
   width: 220px;
   height: 220px;
 }
@@ -279,7 +283,7 @@ footer {
 }
 
 .footer_bottom {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 1.8em;
   font-weight: 700;
   /* width: 768px; */
