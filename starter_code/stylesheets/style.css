@@ -6,6 +6,9 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
+
+/* ### Iteración 1 | Extra Small Screen (width < 768px) */
+
 html {
     font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
     font-size: 100%;
@@ -27,20 +30,31 @@ body {
     flex-wrap: wrap;
 }
 
+header h1 {
+    font-family: Bw Beto Bold;
+    font-size: 50px;
+}
+
+header p {
+    color: #2C303F;
+}
+
 header {
+    margin-top: 80px;
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 4fr 1fr 1fr 1fr 1fr;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /*display: flex;*/
+    box-sizing: border-box;
     padding: 1rem;
     margin: 0px;
     width: 100vw;
+    background-color: #fff;
     border-bottom: 1px solid #cecece;
+    position: fixed;
     z-index: 1000;
 }
 
@@ -65,17 +79,20 @@ nav ul li {
 }
 
 .fa-bars {
+    font-size: 20px;
     color: #5b5e6d;
-    justify-items: flex-end;
+    float: right;
+    margin-top: 15px;
+    width: 70px;
 }
-
 
 main {
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 4fr 1fr
+    grid-template-rows: 1fr 4fr 1fr #F4F3F4
 }
-main img{
+
+main img {
     display: flex;
     width: 100%;
     margin-top: 20%;
@@ -88,6 +105,8 @@ main div {
     align-items: center;
     position: relative;
     flex-direction: column;
+    padding-bottom: 30px;
+    margin-bottom: 0;
 }
 
 section {
@@ -97,6 +116,8 @@ section {
     align-items: center;
     position: relative;
     flex-direction: column;
+    background-color: #F4F3F4;
+    padding-bottom: 40px;
 }
 
 main div img {
@@ -126,53 +147,67 @@ input {
 }
 
 .discovery {
-    background-color:#fff;
-    color:#192592;
-    border: 1px solid #192592; 
+    background-color: #fff;
+    color: #192592;
+    border: 1px solid #192592;
     border-radius: 8px;
     padding: 10px;
-   margin-top: 10%;
+    margin-top: 10%;
     height: 20%;
     width: 100%;
-    
 }
-section{
-    height: 100vh;
+
+.grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(2, 10rem); */
+}
+
+.grid__item {
+    width: 100%;
     align-items: center;
 }
-section img{
-    
-    
-   
-    width: 100%;
-    
- 
+
+section {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 1fr 1fr 2fr;
+    align-items: center;
+}
+
+section img {
+    width: 60%;
+    padding-left: 19%;
+}
+
+section p {
+    text-align: center;
 }
 
 footer {
     list-style: none;
-    
-   
     padding-top: 1px;
-    
     color: #5b5e6d;
-    display: flex;
-    
-   
+    width: 100%;
+    columns: 2;
 }
 
-footer div ul {
-    column-count: 2;
-    column-gap: 20px;
+footer div {
+    line-height: 40px;
+    /*columns: 2;*/
 }
-footer div>img{
-    display: flex;
+
+
+/*footer div ul.col-right {
+    display: flow-root;
+    line-height: 40px;
+}*/
+
+footer div>img {
     align-items: flex-start;
-    width: 40%;
-
+    width: 70%;
 }
+
 
 /*footer div img {
     display: flex;
@@ -181,8 +216,9 @@ footer div>img{
 
 li {
     list-style: none;
-    padding: 15px;
+    padding: 10px;
     display: flex;
+    column-gap: 2;
     align-items: center;
     color: #5b5e6d;
 }
@@ -201,10 +237,10 @@ li {
     background-color: #f2f2f2;
 }
 
-div.flag {
+.flag {
     height: 100px;
-    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .flag img {
@@ -223,4 +259,44 @@ div.flag {
 
 span {
     width: 100%;
+}
+
+.social {
+    align-items: center;
+}
+
+
+/* ### Iteración 2 | Small Screen (961px > width > 767px) */
+
+@media (min-width: 767px) and (max-width: 961px) {
+    nav {}
+    header {}
+    main {}
+    section {}
+    footer {}
+    .footer2 {}
+}
+
+
+/* ### Iteración 3 | Medium Screen (1024px > width > 960px)  */
+
+@media (min-width: 962px) and (max-width: 1024) {
+    nav {}
+    header {}
+    main {}
+    section {}
+    footer {}
+    .footer2 {}
+}
+
+
+/* ### Iteración 4 | Large Screen (width > 1200px) */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    nav {}
+    header {}
+    main {}
+    section {}
+    footer {}
+    .footer2 {}
 }
