@@ -146,7 +146,7 @@ header img {
 
 main {
   border-top: solid #f3f2f4;
-
+  display: inline-block;
   text-align: center;
   /* width: 768px; */
   margin: auto;
@@ -247,7 +247,7 @@ form hr {
 footer {
   display: inline-block;
   color: #5b5e6d;
-  width: 100vw;
+  /* width: 100vw; */
   /* width: 768px; */
   
 }
