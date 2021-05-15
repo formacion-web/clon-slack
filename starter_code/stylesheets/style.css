@@ -15,22 +15,19 @@ nav grey: #5b5e6d;
   /* text-decoration: none; */
 }
 
+
+
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
- 
-  margin: auto; 
-  
+
+  /* margin: auto; */
+
 }
 
-/* @media (min-width: 768px) and (max-width: 960px){
-  body {
-    
-  }
-} */
 
 
-nav {  
+nav {
   position: fixed;
   top: 0;
   display: flex;
@@ -43,12 +40,7 @@ nav {
   margin: auto;
 }
 
-/* @media (min-width: 768px) and (max-width: 960px){
-  nav {
-    width: 960px;
-    
-  }
-} */
+
 
 
 
@@ -79,6 +71,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  display: inline-block;
 }
 
 header h1 {
@@ -97,7 +90,6 @@ header p {
   margin-right: 70px;
   line-height: 1.7em;
   color: #5b5e6d;
-  
 }
 
 input {
@@ -122,7 +114,7 @@ input {
   width: 650px;
   height: 110px;
   font-size: 2.2em;
-  padding-left: 30px;
+
   font-size: 1.8em;
   font-weight: 600;
 }
@@ -249,14 +241,15 @@ footer {
   color: #5b5e6d;
   /* width: 100vw; */
   /* width: 768px; */
-  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer_top {
   text-align: left;
   display: table;
-  
-  
+
+
 }
 
 .slack_logo {
@@ -274,7 +267,7 @@ left: 0%;
   margin-top: 1.5em;
   margin-left: 60px;
   margin-right: 70px;
-  line-height: 2.7em;  
+  line-height: 2.7em;
   float: left;
 }
 
@@ -289,20 +282,20 @@ left: 0%;
   /* width: 768px; */
   height: 300px;
   background: #f4f3f4;
-  line-height: 80px;  
+  line-height: 80px;
   margin-top: 60px;
 }
 
-.footer_bottom div {
+/* .footer_bottom div {
   height: 190px;
   position: relative;
-  
-}
+
+} */
 
 .footer_bottom ul li {
   display: inline-block;
   margin: 15px;
-   
+
 }
 
 .footer_bottom img {
@@ -312,11 +305,88 @@ left: 0%;
     margin-right: 15px;
 }
 
-
-
-.footer_bottom i { 
+.footer_bottom i {
  font-size: 1.2em;
  margin: 30px 20px 20px 20px;
 }
 
+@media (min-width: 768px) and (max-width: 960px){
 
+  nav img {
+    width: 100px;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 13px;
+  }
+
+  nav i {
+    font-size: 25px;
+    margin-top: 28px;
+    margin-bottom: 25px;
+    margin-right: 35px;
+  }
+
+  header h1 {
+    font-size: 4.8em;
+    letter-spacing: -3px;
+  }
+
+  header p {
+    font-size: 1.25em;
+    font-weight: 600;
+  }  
+
+  input {
+  width: 43vw;
+  height: 70px;
+  border-radius: 3px;
+  border-width: 1px;
+  font-size: 1.2em;
+  margin-top: 40px;
+  margin-right: 10px;
+  padding-left: 20px;
+  }
+
+  .get-started {
+  width: 23vw;
+  height: 70px;
+  font-size: 1em;
+  margin: 0;
+  }
+
+  header p:last-of-type {
+    font-size: 0.9em;
+    text-align: left;
+    margin-left: 70px;
+    
+  }
+
+  header img {
+    width: 50%;
+  }
+
+  main h2 {
+    font-size: 2.4em;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+  }
+
+
+  main p {
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  main button {
+    width: 230px;
+    height: 70px;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+
+  .partners_container {
+    display: grid;
+
+  }
+}
