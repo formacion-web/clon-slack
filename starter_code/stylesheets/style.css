@@ -15,17 +15,12 @@ nav grey: #5b5e6d;
   /* text-decoration: none; */
 }
 
-
-
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 
   /* margin: auto; */
-
 }
-
-
 
 nav {
   position: fixed;
@@ -38,11 +33,9 @@ nav {
   background: #fff;
   border-bottom: solid #f3f2f3;
   margin: auto;
+  z-index: 2;
+  
 }
-
-
-
-
 
 nav img {
   width: 200px;
@@ -144,7 +137,9 @@ main {
   margin: auto;
 }
 
-main div:first-child {
+.top_container
+/* main div:first-child 
+ main .partners_container  */ {
   padding-top: 10px;
   background: #f4f3f4;
   border-top: solid #f3f2f3;
@@ -196,6 +191,7 @@ main button {
   align-items: center;
   justify-content: center;
   width: 630px;
+
   margin: auto;
 }
 
@@ -215,7 +211,7 @@ main button {
 
 hr {
   border: solid 1px hsl(300, 3%, 90%);
-  width: 650px;
+  max-width: 650px;
   height: 1px;
   margin: auto;
 }
@@ -228,8 +224,8 @@ main p:nth-last-of-type(2) {
   margin-top: 100px;
 }
 
-main button:last-of-type {
-  margin-bottom: 90px;
+.get-started:last-of-type {
+  margin-bottom: 50px;
 }
 
 form hr {
@@ -248,20 +244,19 @@ footer {
 .footer_top {
   text-align: left;
   display: table;
-
-
 }
 
 .slack_logo {
   margin-left: 15px;
   margin-right: 548px;
-left: 0%;
+  margin-top: 40px;
+  left: 0%;
   width: 220px;
   height: 220px;
 }
 
 .footer_top ul {
-  width: 260px;
+  /* width: 260px; */
   font-size: 1.8em;
   font-weight: 500;
   margin-top: 1.5em;
@@ -295,22 +290,26 @@ left: 0%;
 .footer_bottom ul li {
   display: inline-block;
   margin: 15px;
-
 }
 
 .footer_bottom img {
-    width: 40px;
-    height: auto;
-    transform: translateY(21%);
-    margin-right: 15px;
+  width: 40px;
+  height: auto;
+  transform: translateY(21%);
+  margin-right: 15px;
 }
 
 .footer_bottom i {
- font-size: 1.2em;
- margin: 30px 20px 20px 20px;
+  font-size: 1.2em;
+  margin: 30px 20px 20px 20px;
 }
 
-@media (min-width: 768px) and (max-width: 960px){
+@media (min-width: 768px) and (max-width: 960px) {
+  /* body {
+    position: relative;
+    width: 100vw;
+    margin: auto;
+  } */
 
   nav img {
     width: 100px;
@@ -326,6 +325,10 @@ left: 0%;
     margin-right: 35px;
   }
 
+  header {
+    margin-top: 150px;
+  }
+
   header h1 {
     font-size: 4.8em;
     letter-spacing: -3px;
@@ -334,36 +337,46 @@ left: 0%;
   header p {
     font-size: 1.25em;
     font-weight: 600;
-  }  
+  }
 
   input {
-  width: 43vw;
-  height: 70px;
-  border-radius: 3px;
-  border-width: 1px;
-  font-size: 1.2em;
-  margin-top: 40px;
-  margin-right: 10px;
-  padding-left: 20px;
+    width: 43vw;
+    height: 70px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-right: 10px;
+    padding-left: 20px;
   }
 
   .get-started {
-  width: 23vw;
-  height: 70px;
-  font-size: 1em;
-  margin: 0;
+    width: 23vw;
+    height: 70px;
+    font-size: 1em;
+    margin: 0;
+    border-radius: 5px;
   }
 
   header p:last-of-type {
     font-size: 0.9em;
     text-align: left;
     margin-left: 70px;
-    
   }
 
-  header img {
+  /* header img {
     width: 50%;
-  }
+  } */
+
+  /* main {
+    width: 100vw;
+    
+  } */
+
+  /* main div:first-child {
+    position: relative;
+    width: 100vw;
+  } */
 
   main h2 {
     font-size: 2.4em;
@@ -371,7 +384,6 @@ left: 0%;
     margin-bottom: 30px;
     letter-spacing: -1px;
   }
-
 
   main p {
     font-size: 1.1em;
@@ -387,6 +399,125 @@ left: 0%;
 
   .partners_container {
     display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    width: 100vw;
+    position: relative;
+  }
 
+  .partners {
+    position: relative;
+    margin: auto;
+    width: 40vw ;
+  }
+
+  .partners img {
+    max-width: 250px;
+  }
+
+  .partnerOne {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .partnerTwo {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .partnerThree {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .partnerFour {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .partnerFive {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .partnerSix {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .bottom_container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    border-bottom:  #f3f2f3 solid 1px;
+  }
+  .bottom_container-left{
+    text-align: left;
+    width: 45vw;
+    margin-right: 0;
+    
+  }
+
+  
+  .bottom_container p:first-child {
+    margin-top: 50px;
+    font-size: 2em;
+    letter-spacing: -1px;
+    line-height: 40px;
+  }
+  
+  .bottom_container form {
+    width: 50vw;
+    float: right;
+   
+    margin-right: 50px;
+  }
+
+  .bottom_container form input {
+    margin-top: 50px;
+    width: 23vw;
+    margin-left: 0;    
+  }
+
+  .footer_top {
+    display: grid;
+    width: 100vw;
+    grid-template: auto / 20vw 20vw 20vw 20vw auto;
+    margin-top: 10px;
+    
+  }
+
+  .slack_logo {
+    width: 120px;
+    height: auto;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 20px;
+    grid-column: 1;
+  }
+
+  .footer_top ul {
+    font-size: 1em;
+    margin-left: auto;
+    width: auto;
+    line-height: 2.2em;
+  }
+
+  .footer_top ul:nth-of-type(1) {
+    grid-column: 2;
+  }
+
+  .footer_top ul:nth-of-type(2) {
+    grid-column: 3;
+  }
+
+  .footer_top ul:nth-of-type(3)  {
+    grid-column: 4;
+  }
+
+  .footer_top ul:nth-of-type(4) {
+    grid-column: 5;
   }
 }
