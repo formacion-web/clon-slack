@@ -256,7 +256,7 @@ footer {
 }
 
 .footer_top ul {
-  /* width: 260px; */
+  width: 260px;
   font-size: 1.8em;
   font-weight: 500;
   margin-top: 1.5em;
@@ -274,7 +274,7 @@ footer {
   /* display: inline-block; */
   font-size: 1.8em;
   font-weight: 700;
-  /* width: 768px; */
+  /* width: 100vw; */
   height: 300px;
   background: #f4f3f4;
   line-height: 80px;
