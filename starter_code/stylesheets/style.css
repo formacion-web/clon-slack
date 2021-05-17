@@ -166,11 +166,7 @@ main p {
   color: #5b5e6d;
 }
 
-main img {
-  width: 384px;
-  margin: auto;
-  height: auto;
-}
+
 
 main button {
   margin-top: 40px;
@@ -185,29 +181,42 @@ main button {
   font-weight: 600;
 }
 
+.partners_container {
+  margin-top: 40px;
+}
 .partners {
   display: flex;
-  height: 200px;
+  /* height: 200px; */
   align-items: center;
   justify-content: center;
-  width: 630px;
-
+  /* width: 630px; */
+  width: 85vw;
+  height: 30vw;
   margin: auto;
 }
 
-.partners:last-of-type {
+/* .partners:last-of-type {
   height: 280px;
-}
+} */
 
 .partners img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 40vw; 
+  margin: auto;
+  height: auto;
 }
 
-.ticketmaster {
+/* main img {
+  max-width: 50vw; 
+  margin: auto;
+  height: auto;
+} */
+
+/* .ticketmaster {
   margin-top: 75px;
-}
+} */
 
 hr {
   border: solid 1px hsl(300, 3%, 90%);
@@ -309,7 +318,12 @@ footer {
   margin: 30px 20px 20px 20px;
 }
 
-@media (min-width: 768px) and (max-width: 960px) {
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px)
+{
   /* body {
     position: relative;
     width: 100vw;
@@ -402,53 +416,6 @@ footer {
     border-radius: 5px;
   }
 
-  .partners_container {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: repeat(2, auto);
-    width: 100vw;
-    position: relative;
-  }
-
-  .partners {
-    position: relative;
-    margin: auto;
-    width: 40vw ;
-  }
-
-  .partners img {
-    max-width: 250px;
-  }
-
-  .partnerOne {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .partnerTwo {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .partnerThree {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .partnerFour {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .partnerFive {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .partnerSix {
-    grid-column: 2;
-    grid-row: 3;
-  }
 
   .bottom_container {
     display: flex;
@@ -544,5 +511,142 @@ footer {
 
   .footer_bottom i {
     margin: 10px;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+  .partners_container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    width: 100vw;
+    position: relative;
+    padding: 6vw;
+    margin: auto;
+  }
+
+  .partners {
+    position: relative;
+    /* margin: auto; */
+    max-width: 44vw; 
+    max-height: 15vw;   
+  }
+  
+  .partners:nth-of-type(odd){
+    border-right: solid 1px hsl(300, 3%, 90%);
+    border-bottom: solid 1px hsl(300, 3%, 90%);
+  }
+
+  .partners:nth-of-type(even){
+    border-bottom: solid 1px hsl(300, 3%, 90%);
+  }
+
+  .partners:last-of-type, 
+  .partners:nth-last-of-type(2) {
+    border-bottom: 0;
+  }
+
+  .partners img {
+    max-width: 20vw;
+  }
+
+  .partnerOne {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .partnerTwo {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .partnerThree {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .partnerFour {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .partnerFive {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .partnerSix {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1023px){
+  
+  .partners_container {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
+    width: 100vw;
+    position: relative;
+    padding: 5vw;
+    margin: auto;
+  }
+
+  .partners {
+    position: relative;
+    /* margin: auto; */
+    max-width: 30vw ;
+    max-height: 10vw;
+    
+  }
+  
+  .partners:nth-of-type(1),
+  .partners:nth-of-type(2),
+  .partners:nth-of-type(3)  {
+    border-bottom: solid 1px hsl(300, 3%, 90%);
+  }
+  .partners:nth-of-type(1),
+  .partners:nth-of-type(2),
+  .partners:nth-of-type(4),
+  .partners:nth-of-type(5) {
+    border-right: solid 1px hsl(300, 3%, 90%);
+  }
+
+  .partners img {
+    max-width: 15vw;
+  }
+
+  .partnerOne {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .partnerTwo {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .partnerThree {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .partnerFour {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .partnerFive {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .partnerSix {
+    grid-column: 3;
+    grid-row: 2;
   }
 }
