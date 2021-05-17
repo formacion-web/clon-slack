@@ -292,6 +292,11 @@ footer {
   margin: 15px;
 }
 
+.footer_bottom div:last-child {
+  width: 50vw;
+  margin: auto;
+}
+
 .footer_bottom img {
   width: 40px;
   height: auto;
@@ -519,5 +524,25 @@ footer {
 
   .footer_top ul:nth-of-type(4) {
     grid-column: 5;
+  }
+
+  .footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    height: auto;
+  }
+
+  .footer_bottom ul {
+    margin-left: 30px;
+  }
+
+  .footer_bottom div:last-child {
+    text-align: right;
+    width: 45vw;
+  }
+
+  .footer_bottom i {
+    margin: 10px;
   }
 }
