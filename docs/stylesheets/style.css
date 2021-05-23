@@ -636,7 +636,7 @@ main button {
   header img {
     position: absolute;
     margin-left: 0;
-    max-width: 400px;
+    max-width: 450px;
   }
   header h1,
   header p,
@@ -649,7 +649,7 @@ main button {
   }
 
   header p {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 
   input {
@@ -665,7 +665,7 @@ main button {
 
   header p:last-of-type {
     font-size: 0.4em;
-    margin-bottom: 6rem;
+    margin-bottom: 12rem;
   }
 
   .top_container h2 {
