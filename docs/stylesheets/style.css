@@ -22,6 +22,10 @@ body {
   /* margin: auto; */
 }
 
+button {
+  cursor: pointer;
+}
+
 nav {
   position: fixed;
   top: 0;
